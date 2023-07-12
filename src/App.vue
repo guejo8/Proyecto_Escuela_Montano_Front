@@ -1,11 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <button class="btn btn-primary">Prueba</button>
+<NavbarMontano />
+  
   <router-view/>
 </template>
+
+<script  setup>
+
+import NavbarMontano from '../src/components/NavbarMontano.vue';
+
+</script>
 
 <style scoped lang="scss">
 #app {

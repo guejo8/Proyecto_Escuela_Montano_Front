@@ -2,8 +2,8 @@
 
 <nav class="navbar navbar  fixed-top">
   <div class="container-fluid">
-          <img src="../assets/logo.png" alt="logo" width="200" > 
-          <a class="navbar-brand" href="#"></a>
+          
+          <a class="navbar-brand" href="#"><img src="../assets/logo.png" alt="logo" class="logo" > </a>
 
 
            <nav class="navbar navbar-expand-lg navbar-fixed-top ">
@@ -60,7 +60,7 @@
                   </ul> 
               </div>
             </div>
-          </nav>   -
+          </nav>   
           <!-- -----------Menu hamburguesa----------- -->
 
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -140,11 +140,25 @@
 .navbar-toggler {
     display: none;
 }
-@media (max-width: 525px) {
-    .navbar-toggler {
+
+.logo{
+  width: 10vw;
+  min-width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo{
+  min-width: 100px;
+}
+
+.navbar-toggler {
         display: block;
     }
 }
+
+
+
+
 
 
 // .navbar-toggler {
