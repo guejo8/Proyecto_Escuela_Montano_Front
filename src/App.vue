@@ -1,12 +1,8 @@
 <template>
-<NavbarMontano />
-  
   <router-view/>
 </template>
 
 <script  setup>
-
-import NavbarMontano from '../src/components/NavbarMontano.vue';
 
 </script>
 
