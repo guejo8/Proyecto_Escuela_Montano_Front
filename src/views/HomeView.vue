@@ -1,20 +1,8 @@
 <template>
-
-  <div class="contenido">
-    <h1>Vista home</h1>
-  </div>
+  <HomeMontano />
+</template>
   
-  </template>
+<script setup>
+  import HomeMontano from '../components/HomeMontano.vue';
   
-  <script  setup>
-  
-
- 
-
 </script>
-
-<style lang="scss" scoped>
-.contenido{
-  min-height: 100vh;
-}
-</style>
