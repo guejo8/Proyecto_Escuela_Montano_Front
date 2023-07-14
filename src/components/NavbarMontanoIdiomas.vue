@@ -116,37 +116,6 @@
           </div>
         </div>
       </nav>
-      <br>
-    <!-- <div>
-
-
-    <hr>
-    <br>
-    <i class="fa-solid fa-globe idioma-icono"></i> Idioma: 
-    <select v-model="$i18n.locale">
-      <option v-for=" locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
-    </select>
-
-
-  <ul class="dropdown-menu dropdown-menu-dark">
-    <li><a class="dropdown-item" href="#"><img src="../assets/España.png" width="20"/>Español</a></li>
-    <li><a class="dropdown-item" href="#"><img src="../assets/euskadi.jpeg" width="20"/> Euskara</a></li>
-  </ul>
-
-    <ul class="dropdown-menu dropdown-menu-dark">
-      <select v-model="$i18n.locale">
-        <option v-for=" locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
-      </select>
-    </ul>
-
-  <img src="../assets/España.png" class="bandera-idioma"/>
-  <img src="../assets/euskadi.jpeg" class="bandera-idioma"/>
-    </div> -->
-  
-  <p>{{ $t("home.content") }}</p>
-  <p>{{ $t("home.products", { count: 0 }) }}</p>
-  <p>{{ $t("home.comments", 5) }}</p>
-  <p>{{ $t("text.info") }}</p>
   
 </template>
 

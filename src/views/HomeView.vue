@@ -1,17 +1,15 @@
 <template>
 
-<div class="contenido">
-
-</div>
-  <FooterMontano />
-    
-    <router-view/>
+  <div class="contenido">
+    <h1>Vista home</h1>
+  </div>
+  
   </template>
   
   <script  setup>
   
 
-  import FooterMontano from '../components/FooterMontano.vue';
+ 
 
 </script>
 
