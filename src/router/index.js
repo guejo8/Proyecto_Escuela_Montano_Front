@@ -13,9 +13,39 @@ const routes = [
     component: () => import("../views/AboutView.vue"),
   },
   {
-    path: "/prueba",
-    name: "prueba",
-    component: () => import("../views/VistaPruebasView.vue"),
+    path: "/contacto",
+    name: "contacto",
+    component: () => import("../views/ContactoView.vue"),
+  },
+  {
+    path: "/menu-dia",
+    name: "menu-dia",
+    component: () => import("../views/MenuDiaView.vue"),
+  },
+  {
+    path: "/menu-estrella",
+    name: "menu-estrella",
+    component: () => import("../views/MenuEstrellaView.vue"),
+  },
+  {
+    path: "/carniceria",
+    name: "carniceria",
+    component: () => import("../views/CarniceriaView.vue"),
+  },
+  {
+    path: "/pasteleria",
+    name: "pasteleria",
+    component: () => import("../views/PasteleriaView.vue"),
+  },
+  {
+    path: "/raciones",
+    name: "raciones",
+    component: () => import("../views/RacionesView.vue"),
+  },
+  {
+    path: "/pintxos",
+    name: "pintxos",
+    component: () => import("../views/PintxosView.vue"),
   },
 ];
 
