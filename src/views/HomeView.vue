@@ -1,13 +1,12 @@
 <template>
 
-  <div class="contenido">
-    <h1>Vista home</h1>
-  </div>
+<TarjetasMontano/>
+
   
   </template>
   
   <script  setup>
-  
+  import TarjetasMontano from "../components/TarjetasMontano.vue"
 
  
 
