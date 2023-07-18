@@ -67,7 +67,7 @@ export const messages = {
     home: {
       cerca: "SIEMPRE CERCA...",
       tutorial:
-        "Tutorial; Añade nuestra web a la pantalla principal de tu móvil /",
+        "Tutorial; Añade nuestra web a la pantalla principal de tu móvil",
       pedidos: "Haz tu pedido por: ",
     },
     somos: {

@@ -164,7 +164,10 @@
 }
 
 
-
+.nav-item .router-link-exact-active {
+      color: #128652;
+      font-weight: 500;
+    }
 
 
 
