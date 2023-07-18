@@ -6,10 +6,10 @@
                 <img src="../assets/img/carniceria/pechugas.jpg" alt="">
             </div>
             <div class="nombreProducto">
-                nombre del producto
+                {{ producto.nombre }}
             </div>
             <div class="precioProducto">
-                precio del producto
+                {{ producto.precio }}
             </div>
         </div>
     </div>
