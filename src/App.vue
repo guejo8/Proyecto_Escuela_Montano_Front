@@ -1,12 +1,14 @@
 <template>
   <NavbarMontanoIdiomas/>
   <router-view/>
-  <FooterMontano />
+  <FooterMontano/>
 </template>
 
 <script  setup>
 import NavbarMontanoIdiomas from '@/components/NavbarMontanoIdiomas.vue';
-import FooterMontano from '@/components/FooterMontano.vue';
+import FooterMontano from './components/FooterMontano.vue';
+
+
 
 </script>
 

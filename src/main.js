@@ -8,6 +8,8 @@ import { messages } from "./lang/idiomas"; //Constante que esta siendo exportada
 import "bootstrap/dist/css/bootstrap.min.css"; //Para importar los estilos css
 import "bootstrap/dist/js/bootstrap.js"; //Para importar los js
 
+
+
 const i18n = createI18n({
   locale: "Castellano",
   fallback: "Castellano",

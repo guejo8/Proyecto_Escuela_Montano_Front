@@ -1,8 +1,13 @@
 <template>
-  <HomeMontano />
-</template>
+
+<TarjetasMontano/>
+
   
-<script setup>
-  import HomeMontano from '../components/HomeMontano.vue';
+  </template>
   
+  <script  setup>
+  import TarjetasMontano from "../components/TarjetasMontano.vue"
+
+ 
+
 </script>
