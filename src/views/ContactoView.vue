@@ -1,7 +1,7 @@
 <template>
-        <div>
-            <p>Vista de prueba</p>
-        </div>
+    <div>
+        <h1>Vista contacto</h1>
+    </div>
 </template>
 
 <script setup>

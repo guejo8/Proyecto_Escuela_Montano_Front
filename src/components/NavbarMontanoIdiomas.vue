@@ -2,9 +2,7 @@
 
 <nav class="navbar navbar ">
   <div class="container-fluid">
-          
-          <a class="navbar-brand" href="#"><img src="../assets/logo.png" alt="logo" class="logo" > </a>
-
+          <router-link :to="{ name: 'home' }" class="navbar-brand"><img src="../assets/logo.png" alt="logo" class="logo" ></router-link>
 
            <nav class="navbar navbar-expand-lg  ">
             <div class="container-fluid" > 
@@ -19,18 +17,22 @@
                       {{ $t("navbar.escuela") }}
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">{{ $t("navbar.somos") }}</a></li>
-                      <li><a class="dropdown-item" href="#">{{ $t("navbar.contacto") }}</a></li>
+                      <li >
+                          <router-link :to="{ name: 'about' }" class="dropdown-item">{{ $t("navbar.somos") }}</router-link>
+                      </li>
+                      <li >
+                          <router-link :to="{ name: 'contacto' }" class="dropdown-item">{{ $t("navbar.contacto") }}</router-link>
+                      </li>
                      
                     </ul>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="#">{{ $t("navbar.menu_dia") }}</a>
+                    <router-link :to="{ name: 'menu-dia' }" class="nav-link">{{ $t("navbar.menu_dia") }}</router-link>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="#">{{ $t("navbar.menu_estrella") }}</a>
+                    <router-link :to="{ name: 'menu-estrella' }" class="nav-link">{{ $t("navbar.menu_estrella") }}</router-link>
                   </li>
                                
                   <!-- ----------desplegable Mas--------- -->
@@ -39,10 +41,18 @@
                       {{ $t("navbar.mas") }}
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">{{ $t("navbar.carniceria") }}</a></li>
-                      <li><a class="dropdown-item" href="#">{{ $t("navbar.pasteleria") }}</a></li>
-                      <li><a class="dropdown-item" href="#">{{ $t("navbar.raciones") }}</a></li>
-                      <li><a class="dropdown-item" href="#">{{ $t("navbar.pinchos") }}</a></li>
+                      <li>
+                          <router-link :to="{ name: 'carniceria' }" class="dropdown-item">{{ $t("navbar.carniceria") }}</router-link>
+                      </li>
+                      <li>
+                          <router-link :to="{ name: 'pasteleria' }" class="dropdown-item">{{ $t("navbar.pasteleria") }}</router-link>
+                      </li>
+                                            <li>
+                            <router-link :to="{ name: 'raciones' }" class="dropdown-item">{{ $t("navbar.raciones") }}</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'pintxos' }" class="dropdown-item">{{ $t("navbar.pinchos") }}</router-link>
+                        </li>
                     </ul>
                   </li>
 
@@ -116,7 +126,7 @@
           </div>
         </div>
       </nav>
-  
+
 </template>
 
 <script setup>
