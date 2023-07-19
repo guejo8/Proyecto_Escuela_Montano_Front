@@ -1,8 +1,25 @@
 <template>
-    <div class="background-container">
-      <div class="line-overlay"></div>
-      <h2 class="title1">{{ $t("home.titulo") }}</h2>
+  <div class="background-container">
+    <div class="line-overlay"></div>
+    <h2 class="title1">OSTALARITZA ESKOLA</h2>
+    <div class="icons-container">
+      <div class="icon-wrapper">
+        <!-- Icono de WhatsApp -->
+        <img src="../assets/img/Img_Home/whatsapp.png" class="whatsapp-icon" alt="WhatsApp" />
+        <p class="icon-data">688 69 62 47</p>
+      </div>
+      <div class="icon-wrapper">
+        <!-- Icono de phone -->
+        <img src="../assets/img/Img_Home/phone.png" class="phone-icon" alt="phone" />
+        <p class="icon-data">944 13 00 52</p>
+      </div>
+      <div class="icon-wrapper">
+        <!-- Icono de carta -->
+        <img src="../assets/img/Img_Home/carta.png" class="carta-icon" alt="Carta" />
+        <p class="icon-data">escuelamontano@grupopenascal.com</p>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -70,11 +87,65 @@
 
 @media (max-width: 1024px) {
   .background-container {
-    background-image: url('../assets/img/Img_Home/foto_yerson.png');
-    background-size: cover;
-    padding: 5rem;
+    padding: 8rem;
+  }
+  
+  .title1 {
+    font-size: 3.5rem;
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-container {
+    padding: 6rem;
+    background-position: center;
+  }
+  
+  .title1 {
+    font-size: 3rem;
+    padding-top: 4rem;
+  }
+  
+  .line-overlay {
+    top: 15rem;
+    left: 2rem;
+  }
+  
+  .icons-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-wrapper {
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%; /* Agregado: ancho del 100% */
+  }
+  
+  .icons-container img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.5rem; /* Agregado: margen inferior */
+  }
+  
+  .icon-data {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-container {
+    padding: 3rem;
     min-height: 50vh;
-    display: flex;
+    background-position: center;
+  }
+  
+  .title1 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
   }
   
   .line-overlay {
