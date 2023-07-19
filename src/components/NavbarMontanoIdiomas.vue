@@ -21,7 +21,7 @@
                           <router-link :to="{ name: 'about' }" class="dropdown-item">{{ $t("navbar.somos") }}</router-link>
                       </li>
                       <li >
-                          <router-link :to="{ name: 'contacto' }" class="dropdown-item">{{ $t("navbar.contacto") }}</router-link>
+                          <a href="about#contacto" class="dropdown-item">{{ $t("navbar.contacto") }}</a>
                       </li>
                      
                     </ul>
