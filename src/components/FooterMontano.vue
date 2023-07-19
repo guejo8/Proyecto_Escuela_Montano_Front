@@ -31,6 +31,11 @@
               
             <i class="fa-solid fa-bus-simple"> Metro linea 3</i>
             
+
+            <br/>
+            <br/>
+              
+            <i class="fa-solid fa-bus-simple"> Bizkaibus A3224</i>  -><i class="fa-solid fa-person-walking"></i>  >   11minutos
         </div>
 
         <div class="col-xs-3 col-md-4 d-flex p-lg-4 ">
