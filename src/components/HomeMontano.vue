@@ -1,7 +1,7 @@
 <template>
     <div class="background-container">
       <div class="line-overlay"></div>
-      <h2 class="title1">OSTALARITZA ESKOLA</h2>
+      <h2 class="title1">{{ $t("home.titulo") }}</h2>
     </div>
   </template>
   
@@ -14,7 +14,7 @@
     background-image: url('../assets/img/Img_Home/foto_yerson.png');
     background-size: cover;
     padding: 5rem;
-    min-height: 70vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
   
   .line-overlay {
     position: absolute;
-    top: 27rem;
+    
     left: 6rem;
     width: 90%;
     height: 0.6rem;
@@ -33,7 +33,7 @@
     color: #FFFFFF;
     text-align: center;
     padding-top: 17rem;
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   

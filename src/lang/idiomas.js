@@ -14,6 +14,7 @@ export const messages = {
       bandera: "../assets/euskadi.jpeg",
     },
     home: {
+      titulo: "OSTALARITZA ESKOLA",
       cerca: "BETI GERTU...",
       tutorial:
         "Tutoriala: Gehitu gure weba zure sakelakoaren pantaila nagusian",
@@ -65,6 +66,7 @@ export const messages = {
       bandera: "../assets/España.png",
     },
     home: {
+      titulo: "ESCUELA DE HOSTELERIA",
       cerca: "SIEMPRE CERCA...",
       tutorial:
         "Tutorial; Añade nuestra web a la pantalla principal de tu móvil",

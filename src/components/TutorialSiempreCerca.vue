@@ -64,7 +64,12 @@
 @media (max-width: 780px) {
   .contenedor{
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows:  1fr, 2fr;
   }
+  .texto-siempre-cerca{
+    margin-top: 2rem;
+    margin-bottom: -2.5rem;
+}
 }
 
 
@@ -73,7 +78,5 @@
   .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
-
-
 }
 </style>
