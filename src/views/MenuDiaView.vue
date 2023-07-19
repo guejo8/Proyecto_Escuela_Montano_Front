@@ -1,10 +1,11 @@
 <template>
     <div>
-        <h1>Vista menu del dia</h1>
+        <MenuDiaComp/>
     </div>
 </template>
 
 <script setup>
+import MenuDiaComp from "../components/MenuDiaComp.vue"
 
 </script>
 
