@@ -82,17 +82,24 @@ export default {
 
 /* Estilo para imágenes en las tarjetas */
 .card img {
-  width: 20rem; /* Establecemos el ancho del 100% para todas las imágenes */
+  width: 100%; /* Establecemos el ancho del 100% para todas las imágenes */
   height: 18rem; /* Permite que la altura se ajuste proporcionalmente */
   object-fit: cover; /* Ajustamos el tamaño de la imagen para cubrir toda la tarjeta */
 }
 
-/* Media Query para pantallas pequeñas (ejemplo: teléfonos móviles) */
-@media (max-width: 576px) {
-   .card {
-    height: auto; /* Permitimos que la altura de las tarjetas se ajuste automáticamente */
+/* Media Queries */
+@media (max-width: 992px) {
+  .card {
+    width: 100%; /* Cambiamos el ancho de las tarjetas al 100% en tabletas */
     margin-bottom: 2rem;
   }
 }
 
+@media (max-width: 576px) {
+  .card {
+    height: auto; /* Permitimos que la altura de las tarjetas se ajuste automáticamente en dispositivos móviles */
+    margin-bottom: 2rem;
+  }
+}
 </style>
+
