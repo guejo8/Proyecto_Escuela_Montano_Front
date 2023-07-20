@@ -16,7 +16,6 @@
                 <div class="precioProducto">
                     {{ producto.precio }}
                 </div>
-                <pre>{{ prod }}</pre>
             </div>
         </div>
     </div>
