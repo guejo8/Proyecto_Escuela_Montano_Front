@@ -1,7 +1,7 @@
 <template>
     <div>
         <PortadaCarniceria />
-        <ProductosMontano />
+        <ProductosMontano :categoriaProducto="'car'"/>
     </div>
 </template>
 
