@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AppLayout from "../layouts/AppLayout.vue";
-import DashboardLayout from "@/layouts/DashboardLayout.vue";
+import AdminLayout from "@/layouts/AdminLayout.vue";
 
 const routes = [
   {
@@ -65,17 +65,27 @@ const routes = [
   {
     path: "/intranet",
     name: "intranet",
-    component: DashboardLayout, // Use the DashboardLayout for the dashboard routes
+    component: AdminLayout, // Use the DashboardLayout for the dashboard routes
     children: [
       {
         path: "",
-        name: "principal",
-        component: () => import("../views/intranetViews/AdminView.vue"),
+        name: "adminCarniceria",
+        component: () => import("../viewsAdmin/CarniceriaAdminView.vue"),
       },
       {
-        path: "/intranet-productos",
-        name: "dashboard2",
-        component: () => import("../views/intranetViews/AdminView2.vue"),
+        path: "",
+        name: "adminPasteleria",
+        component: () => import("../viewsAdmin/PasteleriaAdminView.vue"),
+      },
+      {
+        path: "",
+        name: "adminRaciones",
+        component: () => import("../viewsAdmin/RacionesAdminView.vue"),
+      },
+      {
+        path: "",
+        name: "adminPintxos",
+        component: () => import("../viewsAdmin/PintxosAdminView.vue"),
       },
     ],
   },

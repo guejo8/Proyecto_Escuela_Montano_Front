@@ -2,7 +2,7 @@
     <div>
         <!-- Here you can place elements common to the whole application -->
         <NavbarMontanoIdiomas />
-        <router-view></router-view>
+        <router-view/>
         <FooterMontano />
     </div>
 </template>
