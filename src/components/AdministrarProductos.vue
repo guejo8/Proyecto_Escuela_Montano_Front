@@ -29,7 +29,7 @@
                 </div>
                 <div class="botones">
                     <button>Editar</button>
-                    <button>Eliminar</button>
+                    <button @click="eliminarProducto(producto.nombre)">Eliminar</button>
                 </div>
             </div>
         </div>
@@ -59,6 +59,10 @@ export default {
                 this.cargando = false;
             }
         },
+        eliminarProducto(idProducto){
+            // const url = "http://127.0.0.1:5000/productos/delete_producto/"
+            console.log(idProducto)
+        }
     },
     mounted() {
         this.recibirProductosPorCategoria();
@@ -151,5 +155,6 @@ export default {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 1rem;
 }
 </style>
