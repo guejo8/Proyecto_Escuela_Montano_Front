@@ -2,14 +2,64 @@
   <div class="d-flex justify-content-center" style="background-color: #F4F4F4; padding: 3rem">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 mb-4" v-for="card in cards" :key="card.id">
-          <router-link :to="card.link">
+        <div class="col-md-4 mb-4">
+          <router-link to="/pintxos">
             <div class="card h-90">
-              <img :src="card.image" class="card-img-top" :alt="card.alt">
+              <img src="../assets/img/Img_Home/PINTXO_ACEITUNA.png" class="card-img-top" alt="">
             </div>
           </router-link>
             <div class="card-body p-4">
-              <h5 class="card-title text-center">{{ card.title }}</h5>
+              <h5 class="card-title text-center">{{ $t("pintxos.titulo") }}</h5>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <router-link to="/pasteleria">
+            <div class="card h-90">
+              <img src="../assets/img/Img_Home/Pasteleria.png" class="card-img-top" alt="">
+            </div>
+          </router-link>
+            <div class="card-body p-4">
+              <h5 class="card-title text-center">{{ $t("pasteleria.titulo") }}</h5>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <router-link to="/carniceria">
+            <div class="card h-90">
+              <img src="../assets/img/Img_Home/Carniceria.png" class="card-img-top" alt="">
+            </div>
+          </router-link>
+            <div class="card-body p-4">
+              <h5 class="card-title text-center">{{ $t("carniceria.titulo") }}</h5>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <router-link to="/menu-dia">
+            <div class="card h-90">
+              <img src="../assets/img/Img_Home/Menu_del_dia.png" class="card-img-top" alt="">
+            </div>
+          </router-link>
+            <div class="card-body p-4">
+              <h5 class="card-title text-center">{{ $t("menu_dia.titulo") }}</h5>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <router-link to="/menu-estrella">
+            <div class="card h-90">
+              <img src="../assets/img/Img_Home/Menu_izarra.png" class="card-img-top" alt="">
+            </div>
+          </router-link>
+            <div class="card-body p-4">
+              <h5 class="card-title text-center">{{ $t("menu_estrella.titulo") }}</h5>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <router-link to="/raciones">
+            <div class="card h-90">
+              <img src="../assets/img/Img_Home/ULTIMA_BOLSA.png" class="card-img-top" alt="">
+            </div>
+          </router-link>
+            <div class="card-body p-4">
+              <h5 class="card-title text-center">{{ $t("raciones.titulo") }}</h5>
             </div>
         </div>
       </div>
@@ -18,60 +68,6 @@
 </template>
 
 <script>
-import { RouterLink } from 'vue-router'; // Importa el componente RouterLink de Vue Router
-export default {
-  components: {
-    RouterLink, // Registra el componente RouterLink en tu componente actual
-  },
-  data() {
-    return {
-      cards: [
-        {
-          id: 1,
-          image: require("../assets/img/Img_Home/PINTXO_ACEITUNA.png"),
-          alt: "",
-          title: "PINTXOS ",
-          link: "/pintxos"
-        },
-        {
-          id: 2,
-          image: require("../assets/img/Img_Home/Pasteleria.png"),
-          alt: "",
-          title: "PASTELERÍA",
-          link: "/pasteleria"
-        },
-        {
-          id: 3,
-          image: require("../assets/img/Img_Home/Carniceria.png"),
-          alt: "",
-          title: "CARNICERÍA ",
-          link: "/carniceria"
-        },
-        {
-          id: 4,
-          image: require("../assets/img/Img_Home/Menu_del_dia.png"),
-          alt: "",
-          title: "MENÚ DEL DÍA",
-          link: "/menu-dia"
-        },
-        {
-          id: 5,
-          image: require("../assets/img/Img_Home/Menu_izarra.png"),
-          alt: "",
-          title: "MENÚ ESTRELLA ",
-          link: "/menu-estrella"
-        },
-        {
-          id: 6,
-          image: require("../assets/img/Img_Home/ULTIMA_BOLSA.png"),
-          alt: "",
-          title: "RACIONES ",
-          link: "/raciones"
-        }
-      ]
-    };
-  }
-};
 </script>
 
 <style>

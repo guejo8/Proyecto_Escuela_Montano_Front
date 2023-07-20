@@ -19,6 +19,7 @@ export const messages = {
       tutorial:
         "Tutoriala: Gehitu gure weba zure sakelakoaren pantaila nagusian",
       pedidos: "Egin zure eskaera",
+      title1:"OSTALARITZA ESKOLA",
     },
     somos: {
       titulo: "NORTZUK GARA",
@@ -71,6 +72,7 @@ export const messages = {
       tutorial:
         "Tutorial; Añade nuestra web a la pantalla principal de tu móvil",
       pedidos: "Haz tu pedido por: ",
+      title1:"ESCUELA DE HOSTELERÍA",
     },
     somos: {
       titulo: "QUIENES SOMOS",
