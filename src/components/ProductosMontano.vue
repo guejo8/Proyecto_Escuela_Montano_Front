@@ -6,7 +6,8 @@
     <div v-else class="tarjetasProductos d-flex flex-wrap">
         <div v-for="(producto, index) in productos" :key="index" class="tarjetaIndividualProducto col-xl-2 col-lg-3 col-md-3 col-sm-12">
             <div class="imagenProducto">
-                <img src="../assets/img/carniceria/pechugas.jpg" alt="">
+                <img v-if="producto.img" :src="require(`@/assets/img/${producto.img}.jpg`)" alt="">
+                <div v-else>No hay imagen</div>
             </div>
             <div class="contenidoTexto">
                 <div class="nombreProducto">
@@ -15,6 +16,7 @@
                 <div class="precioProducto">
                     {{ producto.precio }}
                 </div>
+                <pre>{{ prod }}</pre>
             </div>
         </div>
     </div>
