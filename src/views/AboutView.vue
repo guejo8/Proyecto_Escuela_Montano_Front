@@ -1,11 +1,14 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <!-- <h1>This is an about page</h1> -->
+    <QuienesSomos />
   </div>
 
 </template>
 
 <script setup>
+import QuienesSomos from '@/components/QuienesSomos.vue';
+
 
 </script>
 

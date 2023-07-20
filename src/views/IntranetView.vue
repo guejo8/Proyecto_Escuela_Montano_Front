@@ -1,11 +1,10 @@
 <template>
     <div>
-        <MenuDiaComp/>
+        <h1>Vista goToIntranet</h1>
     </div>
 </template>
 
 <script setup>
-import MenuDiaComp from "../components/MenuDiaComp.vue"
 
 </script>
 

@@ -14,6 +14,7 @@ export const messages = {
       bandera: "../assets/euskadi.jpeg",
     },
     home: {
+      titulo: "OSTALARITZA ESKOLA",
       cerca: "BETI GERTU...",
       tutorial:
         "Tutoriala: Gehitu gure weba zure sakelakoaren pantaila nagusian",
@@ -26,6 +27,9 @@ export const messages = {
         "Oinarrizko Lanbide Hezkuntzako Ostalaritza eskola, irabazi-asmorik gabeko Peñaskal kooperatibaren barne. ",
       parrafo2:
         "Sukaldaritzako zerbitzuan aritzen gara: Terraza, jantokia, eguneko menua, menu bereziak, ekitaldiak, lunch-ak, Coffee-Break-ak, harategia eta gozogintzako lantegia. Zentroan bertan eta Ekoizan dendetan saltzen diren produktuekin.",
+    },
+    contacto: {
+      pedido: "Egin zure eskaera",
     },
     menu_dia: {
       titulo: "EGUNEKO MENUA",
@@ -65,9 +69,10 @@ export const messages = {
       bandera: "../assets/España.png",
     },
     home: {
+      titulo: "ESCUELA DE HOSTELERIA",
       cerca: "SIEMPRE CERCA...",
       tutorial:
-        "Tutorial; Añade nuestra web a la pantalla principal de tu móvil /",
+        "Tutorial; Añade nuestra web a la pantalla principal de tu móvil",
       pedidos: "Haz tu pedido por: ",
     },
     somos: {
@@ -77,6 +82,9 @@ export const messages = {
         "Escuela de Hosteleria de Formación profesional básica que pertenece al grupo Peñascal Scoop sin animo de lucro.",
       parrafo2:
         "Nos dedicamos al Servicio de Restauración:  Terraza, Comedor, Menu del Dia, Menus especiales, Eventos, lunch, Coffee- Break, Servicio de Carniceria y  Obrador propio de  Pastelería con productos de venta al publico en el centro y en tiendas Ekoizan",
+    },
+    contacto: {
+      pedido: "Haz tu pedido",
     },
     menu_dia: {
       titulo: "menú del día",

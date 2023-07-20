@@ -47,6 +47,16 @@ const routes = [
     name: "pintxos",
     component: () => import("../views/PintxosView.vue"),
   },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("../views/LoginAdminView.vue"),
+  },
+  {
+    path: "/intranet",
+    name: "Intranet",
+    component: () => import("../views/IntranetView.vue"),
+  },
 ];
 
 
