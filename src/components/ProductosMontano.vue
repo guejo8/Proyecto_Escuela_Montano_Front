@@ -1,5 +1,9 @@
 <template>
-    <div class="tarjetasProductos d-flex flex-wrap">
+    <div v-if="cargando ==true" class="carga">
+        <div class="cargando-icono">⏳</div>
+        <p>Cargando...</p>
+    </div>
+    <div v-else class="tarjetasProductos d-flex flex-wrap">
         <div v-for="(producto, index) in productos" :key="index" class="tarjetaIndividualProducto col-xl-2 col-lg-3 col-md-3 col-sm-12">
             <div class="imagenProducto">
                 <img src="../assets/img/carniceria/pechugas.jpg" alt="">
@@ -28,6 +32,7 @@
         data(){
             return{
                 productos: "",
+                cargando: true
             };
         },
         methods:{
@@ -37,8 +42,10 @@
                     const response = await fetch(url);
                     const data = await response.json(); 
                     this.productos = data;
+                    this.cargando = false;
                 }catch (error){
                     console.log(error);
+                    this.cargando = false;
                 }
             },
         },
@@ -92,4 +99,24 @@
 .precioProducto{
     text-align: center;
 }
+
+.carga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    font-size: 1.5rem;
+    color: #555;
+  }
+
+
+.cargando-icono {
+    margin-right: 8px;
+    animation: spin 2s linear infinite; /* Añade una animación de rotación */
+}
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 </style>
