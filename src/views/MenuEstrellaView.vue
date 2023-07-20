@@ -1,10 +1,11 @@
 <template>
     <div>
-        <h1>Vista menu estrella</h1>
+        <MenuEstrellaComp/>
     </div>
 </template>
 
 <script setup>
+import MenuEstrellaComp from "../components/MenuEstrellaComp.vue"
 
 </script>
 

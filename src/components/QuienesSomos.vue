@@ -13,36 +13,12 @@
 
         <hr class="linea-divisora">
 
-        <h2 id="contacto">Contactanos</h2>
-        <div class="contenedor-contacto">
-        
-            <div class="haz-tu-pedido">
-                <p>{{ $t("contacto.pedido") }}</p>
-                <a class="XqQF9c rXJpyf" href="mailto:escuelamontano@grupopenascal.com" target="_blank"><strong>escuelamontano@grupopenascal.com</strong></a>
-                <p>944 130 052 / 688 696 247</p>
-            </div>
-
-            <div>
-                    <a href="mailto:escuelamontano@grupopenascal.com" target="_blank">
-                        <img class="correo" src="../assets/correo.png" alt="">
-                    </a>               
-                </div>
-            <div>
-                <a href="tel: +34-688-696-247">
-                    <img class="telefono" src="../assets/telefono.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="http://www.google.com/url?q=http%3A%2F%2Fwa.link%2F2u7g51&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1XPZ-kjXn-Dx-YwknovvPC" target="_blank" >
-                    <img class="whatsapp" src="../assets/whatsapp.png" alt="">
-                </a>
-            </div>
-            
-        </div>
+        <ContactanosComp/>
     </div>
 </template>
 
 <script setup>
+import ContactanosComp from "@/components/ContactanosComp.vue"
 
 </script>
 
