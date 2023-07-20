@@ -52,22 +52,30 @@ const routes = [
         name: "pintxos",
         component: () => import("../views/PintxosView.vue"),
       },
+      {
+        path: "/:pathMatch(.*)*",
+        name: "not-found",
+        component: () => import("../views/PageNotFoundView.vue"),
+        meta: {
+          title: "Montaño",
+        },
+      },
     ],
   },
   {
-    path: "/dashboard",
-    name: "dashboard",
+    path: "/intranet",
+    name: "intranet",
     component: DashboardLayout, // Use the DashboardLayout for the dashboard routes
     children: [
       {
         path: "",
         name: "principal",
-        component: () => import("../views/DashboardView.vue"),
+        component: () => import("../views/intranetViews/AdminView.vue"),
       },
       {
-        path: "/dashboard2",
+        path: "/intranet-productos",
         name: "dashboard2",
-        component: () => import("../views/DashboardView2.vue"),
+        component: () => import("../views/intranetViews/AdminView2.vue"),
       },
     ],
   },
@@ -82,8 +90,6 @@ const routes = [
     component: () => import("../views/IntranetView.vue"),
   },
 ];
-
-
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

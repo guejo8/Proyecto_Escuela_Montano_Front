@@ -1,5 +1,5 @@
-template>
-  <div class="admin">
+<template>
+<div class="admin">
     <h1>This is an backoffice page</h1>
   </div>
 
@@ -11,8 +11,8 @@ template>
 
 <style lang="scss" scoped>
 .admin {
-  background-color: rgba(90, 160, 90, 0.63);
-  min-height: 50vh;
-  width: 100vw;
+    background-color: rgba(90, 160, 90, 0.63);
+    min-height: 100vh;
+    width: 100vw;
 }
 </style>
