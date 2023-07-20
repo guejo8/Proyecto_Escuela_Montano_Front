@@ -40,16 +40,17 @@ const router = useRouter();
 const submitForm = async () => {
   try {
     // Enviar datos a la ruta de la base de datos utilizando Axios
-    const response = await axios.post('http://127.0.0.1:5000/usuarios', {
+    const response = await axios.post('http://127.0.0.1:4000/add_user', {
       nombre: nombre.value,
       apellido: apellido.value,
       email: email.value,
       password: password.value
-    });
+    }
+    );
 
     console.log(response.data); // Respuesta del servidor
   } catch (error) {
-    // console.error(error);
+  console.log(error);
   }
 };
 
