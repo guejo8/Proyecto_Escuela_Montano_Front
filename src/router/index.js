@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AppLayout from "../layouts/AppLayout.vue";
-import DashboardLayout from "@/layouts/DashboardLayout.vue";
+import AdminLayout from "@/layouts/AdminLayout.vue";
 
 const routes = [
   {
@@ -52,22 +52,40 @@ const routes = [
         name: "pintxos",
         component: () => import("../views/PintxosView.vue"),
       },
+      {
+        path: "/:pathMatch(.*)*",
+        name: "not-found",
+        component: () => import("../views/PageNotFoundView.vue"),
+        meta: {
+          title: "Montaño",
+        },
+      },
     ],
   },
   {
-    path: "/dashboard",
-    name: "dashboard",
-    component: DashboardLayout, // Use the DashboardLayout for the dashboard routes
+    path: "/intranet",
+    name: "intranet",
+    component: AdminLayout, // Use the DashboardLayout for the dashboard routes
     children: [
       {
         path: "",
-        name: "principal",
-        component: () => import("../views/DashboardView.vue"),
+        name: "adminCarniceria",
+        component: () => import("../viewsAdmin/CarniceriaAdminView.vue"),
       },
       {
-        path: "/dashboard2",
-        name: "dashboard2",
-        component: () => import("../views/DashboardView2.vue"),
+        path: "",
+        name: "adminPasteleria",
+        component: () => import("../viewsAdmin/PasteleriaAdminView.vue"),
+      },
+      {
+        path: "",
+        name: "adminRaciones",
+        component: () => import("../viewsAdmin/RacionesAdminView.vue"),
+      },
+      {
+        path: "",
+        name: "adminPintxos",
+        component: () => import("../viewsAdmin/PintxosAdminView.vue"),
       },
     ],
   },
@@ -82,8 +100,6 @@ const routes = [
     component: () => import("../views/IntranetView.vue"),
   },
 ];
-
-
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

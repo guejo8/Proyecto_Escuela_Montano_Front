@@ -1,7 +1,7 @@
 <template>
-<div>
-    <h1>Vista Dashboard 2</h1>
-</div>
+    <div>
+        <h1>Vista Raciones Admin </h1>
+    </div>
 </template>
 
 <script setup>

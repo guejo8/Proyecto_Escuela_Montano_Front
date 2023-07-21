@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Vistas de de Dashboard</h1>
+        <h1>Vista Pintxos Admin </h1>
     </div>
 </template>
 
