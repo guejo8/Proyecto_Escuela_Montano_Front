@@ -30,10 +30,10 @@ export const messages = {
         "Sukaldaritzako zerbitzuan aritzen gara: Terraza, jantokia, eguneko menua, menu bereziak, ekitaldiak, lunch-ak, Coffee-Break-ak, harategia eta gozogintzako lantegia. Zentroan bertan eta Ekoizan dendetan saltzen diren produktuekin.",
     },
     menu_dia: {
-      titulo: "EGUNEKO MENUA",
+      titulo: "Eguneko Menua",
     },
     menu_estrella: {
-      titulo: "MENU IZARRA",
+      titulo: "Menu Izarra",
     },
     carniceria: {
       titulo: "Harategia",
@@ -83,10 +83,10 @@ export const messages = {
         "Nos dedicamos al Servicio de Restauración:  Terraza, Comedor, Menu del Dia, Menus especiales, Eventos, lunch, Coffee- Break, Servicio de Carniceria y  Obrador propio de  Pastelería con productos de venta al publico en el centro y en tiendas Ekoizan",
     },
     menu_dia: {
-      titulo: "menú del día",
+      titulo: "Menú del día",
     },
     menu_estrella: {
-      titulo: "menú estrella",
+      titulo: "Menú estrella",
     },
     carniceria: {
       titulo: "Carnicería",
