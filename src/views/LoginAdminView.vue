@@ -43,16 +43,21 @@ const login = async () => {
     const response = await axios.post('http://127.0.0.1:5000/login', {
       email: email.value,
       password: password.value
+      
     });
+    console.log(response.data);
 
+    const token_session = response.data;
+    localStorage.setItem('token_session', token_session);
+    
     // Obtener el token JWT del servidor
-    const token = response.data.token;
+    // const token = response.data.token;
 
-    // Almacenar el token en el LocalStorage o en una cookie para su uso posterior
-    localStorage.setItem('token', token);
+    // // Almacenar el token en el LocalStorage o en una cookie para su uso posterior
+    // localStorage.setItem('token', token);
 
-    // Mostrar el formulario para agregar nuevos usuarios después de iniciar sesión
-    showRegisterForm.value = true;
+    // // Mostrar el formulario para agregar nuevos usuarios después de iniciar sesión
+    // showRegisterForm.value = true;
 
     // Redirigir a la vista "intranet" después de iniciar sesión
     router.push('/intranet');
