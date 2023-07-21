@@ -12,27 +12,27 @@
         <div class="cargando-icono">⏳</div>
         <p>Cargando...</p>
     </div>
-        <div v-else class="tarjetasProductos d-flex flex-wrap">
-            <div v-for="(producto, index) in productos" :key="index"
-                class="tarjetaIndividualProducto col-xl-2 col-lg-3 col-md-3 col-sm-12">
-                <div class="imagenProducto">
-                    <img v-if="producto.img" :src="require(`@/assets/img/${producto.img}.jpg`)" alt="">
-                    <div v-else>No hay imagen</div>
+    <div v-else class="tarjetasProductos d-flex flex-wrap">
+        <div v-for="(producto, index) in productos" :key="index"
+            class="tarjetaIndividualProducto col-xl-2 col-lg-3 col-md-3 col-sm-12">
+            <div class="imagenProducto">
+                <img v-if="producto.img" :src="require(`@/assets/img/${producto.img}.jpg`)" alt="">
+                <div v-else>No hay imagen</div>
+            </div>
+            <div class="contenidoTexto">
+                <div class="nombreProducto">
+                    {{ producto.nombre }}
                 </div>
-                <div class="contenidoTexto">
-                    <div class="nombreProducto">
-                        {{ producto.nombre }}
-                    </div>
-                    <div class="precioProducto">
-                        {{ producto.precio }}
-                    </div>
-                </div>
-                <div class="botones">
-                    <button>Editar</button>
-                    <button @click="eliminarProducto(producto.nombre)">Eliminar</button>
+                <div class="precioProducto">
+                    {{ producto.precio }}
                 </div>
             </div>
+            <div class="botones">
+                <button>Editar</button>
+                <button @click="eliminarProducto(producto.nombre)">Eliminar</button>
+            </div>
         </div>
+    </div>
 </template>
 
 <script>
