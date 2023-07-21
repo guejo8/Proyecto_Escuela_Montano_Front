@@ -1,6 +1,7 @@
 <template>
 <div class="admin">
     <h1 class="py-4">Vista AdminCarniceria</h1>
+    <AdministrarProductos :categoriaProducto="'car'"/>
     <div class="contenedor">
       <div></div>
       <div>
@@ -12,6 +13,7 @@
 </template>
 
 <script setup>
+import AdministrarProductos from "../componentesAdmin/AdministrarProductos.vue"
 import PanelTabla from "../componentesAdmin/PanelTabla.vue"
 </script>
 

@@ -87,6 +87,11 @@ const routes = [
         name: "adminPintxos",
         component: () => import("../viewsAdmin/PintxosAdminView.vue"),
       },
+      {
+        path: "",
+        name: "adminAgregar",
+        component: () => import("../viewsAdmin/AgregarProductoAdminView.vue"),
+      },
     ],
   },
   {

@@ -1,13 +1,4 @@
 <template>
-    <div class="select">
-        <h2>Administrador</h2>
-        <select v-model="categoriaProducto" name="categoria" id="">
-            <option value="car">Carniceria</option>
-            <option value="pas">Pasteleria</option>
-            <option value="rac">Raciones</option>
-            <option value="pin">Pintxos</option>
-        </select>
-    </div>
     <div v-if="cargando == true" class="carga">
         <div class="cargando-icono">⏳</div>
         <p>Cargando...</p>
@@ -38,11 +29,16 @@
 <script>
 export default {
     name: "ProductosMontano",
+    props: {
+        categoriaProducto: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             productos: "",
-            cargando: true,
-            categoriaProducto: "car"
+            cargando: true
         };
     },
     methods: {
@@ -84,6 +80,7 @@ export default {
     width: 20rem;
     margin-bottom: 1rem;
     box-shadow: rgba(155, 155, 155, 0.35) 0px 5px 15px;
+    background-color: white;
 }
 
 .tarjetaIndividualProducto:hover {

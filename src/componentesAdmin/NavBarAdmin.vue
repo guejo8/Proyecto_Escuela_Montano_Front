@@ -17,6 +17,7 @@
             <router-link :to="{ name: 'adminPasteleria' }" class="nav-item nav-link mx-2" aria-current="page"><i class="fa-solid fa-cake-candles"></i> Pasteleria</router-link>
             <router-link :to="{ name: 'adminRaciones' }" class="nav-item nav-link mx-2" aria-current="page"><i class="fa-solid fa-utensils"></i> Raciones</router-link>
             <router-link :to="{ name: 'adminPintxos' }" class="nav-item nav-link mx-2" aria-current="page"><i class="fa-solid fa-utensils"></i> Pintxos</router-link>
+            <router-link :to="{ name: 'adminAgregar' }" class="nav-item nav-link mx-2" aria-current="page"><i class="fa-solid fa-plus"></i>  Agregar Producto</router-link>
           </div>
           <!-- Right navigation -->
           <div class="navbar-nav ms-lg-4">
