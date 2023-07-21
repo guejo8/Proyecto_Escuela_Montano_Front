@@ -7,7 +7,7 @@
         <div v-for="(producto, index) in productos" :key="index" class="tarjetaIndividualProducto col-xl-2 col-lg-3 col-md-3 col-sm-12">
             <div class="imagenProducto">
                 <img v-if="producto.img" :src="require(`@/assets/img/${producto.img}.jpg`)" alt="">
-                <img v-else src="" alt="">
+                <img v-else src="" alt="No hay foto">
             </div>
             <div class="contenidoTexto">
                 <div class="nombreProducto">
@@ -38,7 +38,7 @@
         },
         methods:{
             async recibirProductosPorCategoria(){
-                const url = "http://127.0.0.1:5000/productos/" + this.categoriaProducto;
+                const url = "http://127.0.0.1:4000/productos/" + this.categoriaProducto;
                 try {
                     const response = await fetch(url);
                     const data = await response.json(); 

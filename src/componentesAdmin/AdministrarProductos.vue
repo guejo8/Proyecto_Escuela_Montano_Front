@@ -8,7 +8,7 @@
             class="tarjetaIndividualProducto col-xl-2 col-lg-3 col-md-3 col-sm-12">
             <div class="imagenProducto">
                 <img v-if="producto.img" :src="require(`@/assets/img/${producto.img}.jpg`)" alt="">
-                <div v-else>No hay imagen</div>
+                <img src="" alt="No hay imagen">
             </div>
             <div class="contenidoTexto">
                 <div class="nombreProducto">
@@ -17,10 +17,11 @@
                 <div class="precioProducto">
                     {{ producto.precio }}
                 </div>
+                <pre>{{ producto }}</pre>
             </div>
             <div class="botones">
-                <button>Editar</button>
-                <button @click="eliminarProducto(producto.nombre)">Eliminar</button>
+                <button class="btn">Editar</button>
+                <button class="btn" @click="eliminarProducto(producto.id)">Eliminar</button>
             </div>
         </div>
     </div>
@@ -44,7 +45,7 @@ export default {
     methods: {
         async recibirProductosPorCategoria() {
             this.cargando = true;
-            const url = "http://127.0.0.1:5000/productos/" + this.categoriaProducto;
+            const url = "http://127.0.0.1:4000/productos/" + this.categoriaProducto;
             try {
                 const response = await fetch(url);
                 const data = await response.json();
@@ -56,8 +57,20 @@ export default {
             }
         },
         eliminarProducto(idProducto){
-            // const url = "http://127.0.0.1:5000/productos/delete_producto/"
-            console.log(idProducto)
+            const url = "http://127.0.0.1:4000/productos/delete_producto/" + idProducto
+            fetch(url,{
+                method: "DELETE",
+            })
+            .then(response => {
+                if(response.ok){
+                    alert("Producto eliminado")
+                }else{
+                    alert("Error al eliminar el producto")
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            });
         }
     },
     mounted() {
@@ -154,4 +167,15 @@ export default {
     gap: 2rem;
     margin-bottom: 1rem;
 }
+
+
+  .btn {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #45a049;
+  }
 </style>
