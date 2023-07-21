@@ -1,7 +1,7 @@
 <template>
   <div class="background-container">
     <div class="line-overlay"></div>
-    <h2 class="title1">OSTALARITZA ESKOLA</h2>
+    <h2 class="title1">{{ $t("home.title1") }}</h2>
     <div class="icons-container">
       <div class="icon-wrapper">
         <!-- Icono de WhatsApp -->

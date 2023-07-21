@@ -19,6 +19,7 @@ export const messages = {
       tutorial:
         "Tutoriala: Gehitu gure weba zure sakelakoaren pantaila nagusian",
       pedidos: "Egin zure eskaera",
+      title1:"OSTALARITZA ESKOLA",
     },
     somos: {
       titulo: "NORTZUK GARA",
@@ -32,10 +33,10 @@ export const messages = {
       pedido: "Egin zure eskaera",
     },
     menu_dia: {
-      titulo: "EGUNEKO MENUA",
+      titulo: "Eguneko Menua",
     },
     menu_estrella: {
-      titulo: "MENU IZARRA",
+      titulo: "Menu Izarra",
     },
     carniceria: {
       titulo: "Harategia",
@@ -74,6 +75,7 @@ export const messages = {
       tutorial:
         "Tutorial; Añade nuestra web a la pantalla principal de tu móvil",
       pedidos: "Haz tu pedido por: ",
+      title1:"ESCUELA DE HOSTELERÍA",
     },
     somos: {
       titulo: "QUIENES SOMOS",
@@ -87,10 +89,10 @@ export const messages = {
       pedido: "Haz tu pedido",
     },
     menu_dia: {
-      titulo: "menú del día",
+      titulo: "Menú del día",
     },
     menu_estrella: {
-      titulo: "menú estrella",
+      titulo: "Menú estrella",
     },
     carniceria: {
       titulo: "Carnicería",
