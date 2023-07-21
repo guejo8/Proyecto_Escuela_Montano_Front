@@ -6,7 +6,7 @@ export const messages = {
       contacto: "Kontaktua",
       menu_dia: "Eguneko menua",
       menu_estrella: "Menu Izarra",
-      mas: "Gehiao",
+      mas: "Gehiago",
       carniceria: "Harategia",
       pasteleria: "Gozotegia",
       raciones: "Razioak",
