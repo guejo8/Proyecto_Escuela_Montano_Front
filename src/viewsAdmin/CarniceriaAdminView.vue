@@ -29,7 +29,7 @@ h1{
 }
 .contenedor{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   width: 95vw;
   margin: 0 auto;
 }
