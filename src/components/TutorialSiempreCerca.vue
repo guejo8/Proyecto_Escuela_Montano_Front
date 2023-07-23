@@ -1,5 +1,5 @@
 <template>
-    <div class="contenedor-fondo">
+    <div class="contenedor-fondo p-3">
         <div class="contenedor">
             <div class="texto-siempre-cerca">
                 <h2>{{ $t("home.cerca") }}</h2>
