@@ -56,15 +56,19 @@
                     </ul>
                   </li>
 
-                              <!-- ----------desplegable idioma--------- -->
-                  <li class="nav-item dropdown">
 
-                      <i class="fa-solid fa-globe idioma-icono"></i><select v-model="$i18n.locale">
-                        <option v-for=" locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
-                      </select>
-
-                  </li>
                   </ul> 
+
+                  <ul>
+                <!-- ----------desplegable idioma--------- -->
+                    <li class="nav-item dropdown">
+
+                        <i class="fa-solid fa-globe idioma-icono"></i><select v-model="$i18n.locale">
+                          <option v-for=" locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+                        </select>
+
+                    </li>
+                  </ul>
               </div>
             </div>
           </nav>   
@@ -73,6 +77,7 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="offcanvas offcanvas-start text-bg-" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
               <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5> -->
@@ -153,7 +158,7 @@
   margin-right: .2rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 980px) {
   .logo{
   min-width: 100px;
 }
