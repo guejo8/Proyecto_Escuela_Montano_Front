@@ -4,7 +4,7 @@
         
                 <div class="haz-tu-pedido">
                     <p>{{ $t("contacto.pedido") }}</p>
-                    <a class="XqQF9c rXJpyf" href="mailto:escuelamontano@grupopenascal.com" target="_blank"><strong>escuelamontano@grupopenascal.com</strong></a>
+                    <a class="" href="mailto:escuelamontano@grupopenascal.com" target="_blank"><strong>escuelamontano@grupopenascal.com</strong></a>
                     <p>944 130 052 / 688 696 247</p>
                 </div>
 
@@ -45,9 +45,7 @@ h2 {
     text-align: center;
 }
 
-p {
-    margin-left: 5rem;
-}
+
 
 .subtitulo {
     text-align: start;
@@ -69,7 +67,7 @@ p {
 
 .contenedor-contenido img {
     margin: 0 1rem 1rem auto;
-    width: 70%;
+
     border-radius: .5rem;
 }
 
@@ -85,9 +83,11 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    height: 30vh;
+    min-height: 30vh;
     min-height: 30vh;
     margin-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 .contenedor-contacto div {
@@ -95,9 +95,7 @@ p {
 }
 
 
-.contenedor-contacto img {
-    width: 70%;
-}
+
 
 .haz-tu-pedido a {
     text-decoration: none;
@@ -105,12 +103,17 @@ p {
 
 .contenedor-contacto .correo {
     margin: 0 auto;
-    width: 35%;
+
+}
+
+.correo, .telefono, .whatsapp {
+    width: 10rem;
 }
 
 .telefono,
 .whatsapp {
-    border-radius: 1rem;
+
+    width: 200px;
 }
 
 /* Estilos para dispositivos tablets */
@@ -119,6 +122,7 @@ p {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    
 
     .contenedor-contenido img {
         margin: 0 auto;
@@ -130,14 +134,18 @@ p {
 
     }
 
-    .contenedor-contacto img {
-        width: 50%;
-    }
+
 
 }
 
 /* Estilos para dispositivos tablets pequeñas */
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .contenedor-contacto {
+
+        grid-template-columns: 1fr;
+
+    }
+}
 
 
 /* Estilos para dispositivos móviles */

@@ -22,7 +22,6 @@
 .contenedor-fondo{
     background-color: #008948;
     min-height: 40vh;
-    width: 100vw;
     margin-bottom: 2rem;
 }
 
@@ -55,7 +54,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin: 1rem;
+  padding: 1rem;
   width: 100%;
   height: 100%;
 }

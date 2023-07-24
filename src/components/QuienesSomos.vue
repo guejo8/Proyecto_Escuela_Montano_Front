@@ -35,9 +35,7 @@ h1, h2{
     text-align: center;
 }
 
-p{
-    margin-left: 5rem;
-}
+
 
 .subtitulo{
     text-align: start;
