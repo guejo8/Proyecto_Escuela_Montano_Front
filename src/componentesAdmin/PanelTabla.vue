@@ -19,7 +19,7 @@
                 <tr v-for="producto in paginatedProductos" :key="producto.id">
                     <td class="ancho-10">
                         <img alt="..."
-                            src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                            :src="producto.img"
                             class="imagen">
                     </td>
                     <td class="ancho-25 responsivo">
@@ -139,7 +139,7 @@ function goToPage(page) {
     padding-left: 1rem;
 }
 .imagen{
-    width: 3.5rem;
+    width: 100%;
     margin: 0 auto;
 }
 
