@@ -2,9 +2,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-0 py-3">
       <div class="container-xl">
         <!-- Logo -->
-        <a class="navbar-brand">
+        <router-link class="navbar-brand" :to="{ name: 'home' }">
           <img src="../assets/logo.png" class="h-8" alt="...">
-        </a>
+        </router-link>
         <!-- Navbar toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
