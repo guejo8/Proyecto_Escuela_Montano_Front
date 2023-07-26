@@ -100,7 +100,7 @@ export const messages = {
       catalogo: "CATALOGO DE CARNICERÍA",
     },
     pasteleria: {
-      titulo: "Pasteria",
+      titulo: "Pasteleria",
       producto_estrella: "PRODUCTO ESTRELLA DE NUESTRO OBRADOR",
     },
     raciones: {
