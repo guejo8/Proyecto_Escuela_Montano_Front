@@ -105,28 +105,24 @@ const routes = [
     name: "Intranet",
     component: () => import("../views/IntranetView.vue"),
     meta: {
-          requiresAuth: true,
-        },
+      requiresAuth: true,
+    },
   },
 ];
 
-
-
-function requireAuth(to, from, next) {
-  if (localStorage.getItem("token")) {
-    next();
-  } else {
-    next("/login");
-  }
-}
+// function requireAuth(to, from, next) {
+//   if (localStorage.getItem("token")) {
+//     next();
+//   } else {
+//     next("/login");
+//   }
+// }
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
-router.beforeEach(requireAuth);
-
-
+// router.beforeEach(requireAuth);
 
 export default router;
