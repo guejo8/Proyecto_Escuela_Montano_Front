@@ -1,6 +1,6 @@
 <template>
-<div class="admin">
-    <h1 class="py-4">Vista AdminCarniceria</h1>
+<div class="contenedor ">
+    <h1 class="py-4 text-center"> Admin Carniceria </h1>
     <AdministrarProductos :categoriaProducto="'car'"/>
 
   </div>
@@ -13,14 +13,9 @@ import AdministrarProductos from "../componentesAdmin/AdministrarProductos.vue"
 </script>
 
 <style lang="scss" scoped>
-.admin {
+.contenedor {
     background-color: rgba(90, 160, 90, 0.63);
     min-height: 100vh;
     max-width: 100vw;
 }
-h1{
-  text-align: center;
-
-}
-
 </style>

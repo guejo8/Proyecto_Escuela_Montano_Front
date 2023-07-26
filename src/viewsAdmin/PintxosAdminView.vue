@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <h1>Vista Pintxos Admin </h1>
-    </div>
-    <AdministrarProductos :categoriaProducto="'pin'"/>
+        <div class="contenedor ">
+            <h1 class="py-4 text-center"> Admin Pintxos</h1>
+            <AdministrarProductos :categoriaProducto="'pin'"/>
+          </div>
 </template>
 
 <script setup>
@@ -10,5 +10,9 @@
 </script>
 
 <style lang="scss" scoped>
-
+.contenedor {
+    background-color: rgba(90, 160, 90, 0.63);
+    min-height: 100vh;
+    max-width: 100vw;
+}
 </style>

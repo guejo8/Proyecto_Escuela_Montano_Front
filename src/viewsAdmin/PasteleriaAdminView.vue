@@ -1,8 +1,9 @@
 <template>
-    <div>
-        <h1>Vista AdminPasteleria </h1>
-    </div>
-    <AdministrarProductos :categoriaProducto="'pas'"/>
+    <div class="contenedor ">
+        <h1 class="py-4 text-center"> Admin Pasteleria</h1>
+        <AdministrarProductos :categoriaProducto="'pas'"/>
+      </div>
+
 </template>
 
 <script setup>
@@ -10,5 +11,9 @@
 </script>
 
 <style lang="scss" scoped>
-
+.contenedor {
+    background-color: rgba(90, 160, 90, 0.63);
+    min-height: 100vh;
+    max-width: 100vw;
+}
 </style>

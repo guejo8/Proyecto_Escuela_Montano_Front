@@ -7,7 +7,7 @@
         <div v-for="(producto, index) in productos" :key="index" class="tarjetaIndividualProducto col-xl-2 col-lg-3 col-md-3 col-sm-12">
             <div class="imagenProducto">
                 <img v-if="producto.img" :src="producto.img" alt="">
-                <img v-else src="" alt="No hay foto">
+                <img v-else src="" :alt="producto.nombre">
             </div>
             <div class="contenidoTexto">
                 <div class="nombreProducto">
@@ -75,7 +75,7 @@
 
 .imagenProducto {
     position: relative; 
-    border: 1px solid black;
+    border: 1px solid rgb(196, 196, 196);
     height: 15rem;
     overflow: hidden;
     }

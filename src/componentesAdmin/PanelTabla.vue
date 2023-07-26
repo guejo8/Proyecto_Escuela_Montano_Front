@@ -148,8 +148,6 @@ function goToPage(page) {
     color: white;
 }
 
-td{
-    border: 1px red solid;
-}
+
 
 </style>

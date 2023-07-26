@@ -1,10 +1,10 @@
 <template>
-    <h1>Todos los productos</h1>
-    <div class="contenedor">
-        <div>
-        <PanelTabla/>
-        </div>
-    </div>
+        <div class="contenedor ">
+            <h1 class="py-4 text-center"> Todos los productos</h1>
+            <div class="tabla">
+            <PanelTabla/>
+            </div>
+          </div>
 </template>
 
 <script setup>
@@ -13,14 +13,15 @@ import PanelTabla from "../componentesAdmin/PanelTabla.vue"
 </script>
 
 <style lang="scss" scoped>
-
-h1{
-    text-align: center;
-}
-.contenedor{
+.tabla{
   display: grid;
   grid-template-columns: 1fr;
-  width: 95vw;
+  width: 90vw;
   margin: 0 auto;
 }
+.contenedor{
+    background-color: rgba(90, 160, 90, 0.63);
+    min-height: 100vh;
+}
+
 </style>

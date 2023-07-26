@@ -106,8 +106,12 @@ h2 {
 
 }
 
-.correo, .telefono, .whatsapp {
+.telefono, .whatsapp {
     width: 10rem;
+}
+
+.correo{
+    width: 7rem;
 }
 
 .telefono,

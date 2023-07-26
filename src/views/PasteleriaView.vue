@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Vista Pasteleria</h1>
+        <h1 class="py-3 text-center">{{ $t("pasteleria.titulo") }}</h1>
         <ProductosMontano :categoriaProducto="'pas'"/>
     </div>
 </template>

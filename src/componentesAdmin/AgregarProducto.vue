@@ -1,6 +1,6 @@
 <template>
     <div class="formulario">
-        <h2>Agregar Producto</h2>
+        <h1 class="py-4 text-center">Agregar Producto</h1>
         <form @submit.prevent="agregarProducto">
             <label>Imagen del Producto: </label><input type="text" v-model="photo">
             <br />

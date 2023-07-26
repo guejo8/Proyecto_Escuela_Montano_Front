@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div >
         <PortadaCarniceria />
-        <ProductosMontano :categoriaProducto="'car'"/>
+        <ProductosMontano :categoriaProducto="'car'" class="py-4"/>
     </div>
 </template>
 
