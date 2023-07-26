@@ -2,9 +2,10 @@
     <div class="formulario">
         <h2>Agregar Producto</h2>
         <form @submit.prevent="agregarProducto">
-            <label>Imagen del Producto:</label>
-            <input type="file" ref="imagenProducto" accept="image/*" @change="cargarImagen" />
+            <label>Imagen del Producto: </label><input type="text" v-model="photo">
             <br />
+            <img v-if='photo != undefined' class="foto-previsualizacion" :src="photo" alt="defecto foto undefined">
+
 
             <label>Categoría del Producto:</label>
             <select v-model="categoria">
@@ -26,37 +27,47 @@
             <button type="submit">Agregar</button>
         </form>
     </div>
+
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            categoria: "",
-            nombre: "",
-            precio: "",
-            imagen: null,
-        };
-    },
-    methods: {
-        cargarImagen(event) {
-            this.imagen = event.target.files[0];
-        },
-        agregarProducto() {
+<script setup>
+import { ref } from 'vue';
+import axios from "axios"; 
 
-            console.log("Imagen:", this.imagen);
-            console.log("Categoría:", this.categoria);
-            console.log("Nombre:", this.nombre);
-            console.log("Precio:", this.precio);
+const categoria = ref('');
+const nombre = ref('');
+const precio = ref('');
+const photo = ref(undefined);
 
-            this.categoria = "";
-            this.nombre = "";
-            this.precio = "";
-            this.imagen = null;
-            this.$refs.imagenProducto.value = "";
-        },
-    },
+const agregarProducto = async () => {
+    const photoValue = photo.value;
+    const categoriaValue = categoria.value;
+    const nombreValue = nombre.value;
+    const precioValue = precio.value;
+
+    // Limpia los campos
+    categoria.value = '';
+    nombre.value = '';
+    precio.value = '';
+    photo.value = undefined;
+
+    try {
+        const response = await axios.post('http://127.0.0.1:5000/add_producto', {
+            img: photoValue,
+            idcat: categoriaValue,
+            nombre: nombreValue,
+            precio: precioValue,
+        });
+
+        // Aquí puedes manejar la respuesta del servidor si es necesario
+        console.log('Respuesta del servidor:', response.data);
+    } catch (error) {
+        // Manejo de errores
+        console.error('Error al enviar la solicitud:', error);
+    }
 };
+
+
 </script>
 
 <style>
@@ -70,6 +81,7 @@ export default {
 }
 
 form {
+    width: 50vw;
     max-width: 400px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -105,5 +117,10 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+
+.foto-previsualizacion{
+    width: 100%;
 }
 </style>

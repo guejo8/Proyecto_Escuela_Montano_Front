@@ -6,7 +6,7 @@
     <div v-else class="tarjetasProductos d-flex flex-wrap">
         <div v-for="(producto, index) in productos" :key="index" class="tarjetaIndividualProducto col-xl-2 col-lg-3 col-md-3 col-sm-12">
             <div class="imagenProducto">
-                <img v-if="producto.img" :src="require(`@/assets/img/${producto.img}.jpg`)" alt="">
+                <img v-if="producto.img" :src="producto.img" alt="">
                 <img v-else src="" alt="No hay foto">
             </div>
             <div class="contenidoTexto">
