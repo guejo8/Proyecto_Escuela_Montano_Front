@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createRouter, createWebHistory } from "vue-router";
 import AppLayout from "../layouts/AppLayout.vue";
 import AdminLayout from "@/layouts/AdminLayout.vue";
@@ -103,12 +104,29 @@ const routes = [
     path: "/intranet",
     name: "Intranet",
     component: () => import("../views/IntranetView.vue"),
+    meta: {
+          requiresAuth: true,
+        },
   },
 ];
+
+
+
+function requireAuth(to, from, next) {
+  if (localStorage.getItem("token")) {
+    next();
+  } else {
+    next("/login");
+  }
+}
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
+
+router.beforeEach(requireAuth);
+
+
 
 export default router;
