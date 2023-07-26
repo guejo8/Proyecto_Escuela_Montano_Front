@@ -93,6 +93,11 @@ const routes = [
         name: "adminAgregar",
         component: () => import("../viewsAdmin/AgregarProductoAdminView.vue"),
       },
+      {
+        path: "",
+        name: "todosProductos",
+        component: () => import("../viewsAdmin/TodosProductosView.vue"),
+      },
     ],
   },
   {
@@ -100,14 +105,14 @@ const routes = [
     name: "login",
     component: () => import("../views/LoginAdminView.vue"),
   },
-  {
-    path: "/intranet",
-    name: "Intranet",
-    component: () => import("../views/IntranetView.vue"),
-    meta: {
-      requiresAuth: true,
-    },
-  },
+  // {
+  //   path: "/intranet",
+  //   name: "Intranet",
+  //   component: () => import("../views/IntranetView.vue"),
+  //   meta: {
+  //     requiresAuth: true,
+  //   },
+  // },
 ];
 
 // function requireAuth(to, from, next) {
