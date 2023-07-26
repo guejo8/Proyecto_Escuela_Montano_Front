@@ -45,7 +45,7 @@ export default {
     methods: {
         async recibirProductosPorCategoria() {
             this.cargando = true;
-            const url = "http://127.0.0.1:4000/productos/" + this.categoriaProducto;
+            const url = "http://127.0.0.1:5000/productos/" + this.categoriaProducto;
             try {
                 const response = await fetch(url);
                 const data = await response.json();
@@ -57,7 +57,7 @@ export default {
             }
         },
         eliminarProducto(idProducto){
-            const url = "http://127.0.0.1:4000/delete_producto/" + idProducto
+            const url = "http://127.0.0.1:5000/delete_producto/" + idProducto
             fetch(url,{
                 method: "DELETE",
             })

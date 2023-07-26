@@ -52,7 +52,7 @@ const agregarProducto = async () => {
     photo.value = undefined;
 
     try {
-        const response = await axios.post('http://127.0.0.1:4000/add_producto', {
+        const response = await axios.post('http://127.0.0.1:5000/add_producto', {
             img: photoValue,
             idcat: categoriaValue,
             nombre: nombreValue,

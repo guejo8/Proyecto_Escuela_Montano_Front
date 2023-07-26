@@ -40,7 +40,7 @@ const router = useRouter();
 const submitForm = async () => {
   try {
     // Enviar datos a la ruta de la base de datos utilizando Axios
-    const response = await axios.post('http://127.0.0.1:4000/add_user', {
+    const response = await axios.post('http://127.0.0.1:5000/add_user', {
       nombre: nombre.value,
       apellido: apellido.value,
       email: email.value,
