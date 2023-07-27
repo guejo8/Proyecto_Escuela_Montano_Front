@@ -81,8 +81,7 @@
     }
 
 .imagenProducto > img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width:  100%;
     transition: transform 0.3s; 
 }
 

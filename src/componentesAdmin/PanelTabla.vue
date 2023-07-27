@@ -35,14 +35,11 @@
 
                     <td class="ancho-10 ms-3">
                         
-                        <span class="badge badge-lg badge-dot ">
+                        <!-- <span class="badge badge-lg badge-dot ">
                             <a  class="btn btn-sm btn-neutral">Editar</a>
-                        </span>
+                        </span> -->
                         
-                        <button type="button"
-                            class="btn btn-sm btn-square btn-neutral text-danger-hover borrar ">
-                            <i class="bi bi-trash "></i>
-                        </button>
+                        <button class="btn btn-danger btn-sm btn-square btn-neutral borrar" data-bs-toggle="modal" :data-bs-target="'#exampleModal' + producto.id"><i class="fa-solid fa-trash"></i></button>
                     </td>
                 </tr>
             </tbody>
@@ -72,6 +69,29 @@
         </div>
 
 </div>
+
+        <!-- Modal -->
+            <div v-for="(producto, index) in productos" :key="index">
+              <div :id="'exampleModal' + producto.id" class="modal fade exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div>
+                            <h5 class="titulo-modal text-center" id="exampleModalLabel">¿Quieres borrar este producto?</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img class="modal-imagen-meal" :src="producto.img">
+                            <p class="text-center"><strong>Nombre producto:</strong> {{ producto.nombre }}</p>
+                            <p class="text-center"><strong>Precio: </strong> {{ producto.precio }}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger"
+                                data-bs-dismiss="modal" @click="eliminarProducto(producto.id)" > Si, borrar. </button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cancelar </button>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
 </template>
 
 <script setup>
@@ -120,6 +140,20 @@ const paginatedProductos = computed(() => {
 function goToPage(page) {
     if (page >= 1 && page <= totalPages.value) {
         currentPage.value = page;
+    }
+}
+
+async function eliminarProducto(idProducto) {
+    const url = "http://127.0.0.1:5000/delete_producto/" + idProducto;
+    try {
+        const response = await axios.delete(url);
+        if (response.status === 200) {
+            alert("Producto eliminado");
+        } else {
+            alert("Error al eliminar el producto");
+        }
+    } catch (error) {
+        console.error(error);
     }
 }
 </script>

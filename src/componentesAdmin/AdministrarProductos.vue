@@ -21,7 +21,7 @@
                 <pre>{{ producto.img }}</pre> -->
             </div>
             <div class="botones">
-                <button class="btn btn-success">Editar</button>
+                <!-- <button class="btn btn-success">Editar</button> -->
                 <button class="btn btn-danger" data-bs-toggle="modal" :data-bs-target="'#exampleModal' + producto.id"><i class="fa-solid fa-trash"></i>  Eliminar</button>
             </div>
         </div>
@@ -126,7 +126,7 @@ watchEffect(() => {
 }
 
 .imagenProducto>img {
-    width: 100%;
+    max-width:  100%;
     
     transition: transform 0.3s;
 }
